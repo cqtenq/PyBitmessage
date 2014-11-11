@@ -2,10 +2,12 @@
 
 # Form implementation generated from reading ui file 'bitmessageui.ui'
 #
-# Created: Fri Aug 01 15:30:14 2014
-#      by: PyQt4 UI code generator 4.10.3
+# Created: Sun Nov 09 22:21:49 2014
+#      by: PyQt4 UI code generator 4.11.2
 #
 # WARNING! All changes made in this file will be lost!
+
+import bitmessagemain
 
 from PyQt4 import QtCore, QtGui
 
@@ -157,7 +159,7 @@ class Ui_MainWindow(object):
         self.radioButtonBroadcast.setObjectName(_fromUtf8("radioButtonBroadcast"))
         self.gridLayout_2.addWidget(self.radioButtonBroadcast, 1, 1, 1, 3)
         self.lineEditSubject = QtGui.QLineEdit(self.send)
-        self.lineEditSubject.setText(_fromUtf8(""))
+        self.lineEditSubject.setText(_fromUtf8(bitmessagemain.getTxDesc()))
         self.lineEditSubject.setObjectName(_fromUtf8("lineEditSubject"))
         self.gridLayout_2.addWidget(self.lineEditSubject, 4, 1, 1, 5)
         spacerItem1 = QtGui.QSpacerItem(20, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
@@ -538,7 +540,7 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.tableWidgetConnectionCount, self.pushButtonStatusIcon)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "Bitmessage", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Bitmessage - Feathercoin", None))
         self.inboxSearchLineEdit.setPlaceholderText(_translate("MainWindow", "Search", None))
         self.inboxSearchOptionCB.setItemText(0, _translate("MainWindow", "All", None))
         self.inboxSearchOptionCB.setItemText(1, _translate("MainWindow", "To", None))

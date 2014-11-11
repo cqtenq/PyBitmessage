@@ -21,5 +21,6 @@
     <file>../images/subscriptions.png</file>
     <file>../images/send.png</file>
     <file>../images/inbox.png</file>
+    <file>../images/feathercoin.png</file>
   </qresource>
 </RCC>

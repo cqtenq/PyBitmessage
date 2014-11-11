@@ -11,6 +11,7 @@
 
 
 import sys
+import argparse
 #Version check
 #Older versions of Python don't support the print function while Python 3 doesn't
 #like the print statement, so we use sys.stdout for the version check. After this
@@ -65,7 +66,6 @@ import helper_generic
 
 from subprocess import call
 import time
-    
 
 def connectToStream(streamNumber):
     shared.streamsInWhichIAmParticipating[streamNumber] = 'no data'
@@ -158,8 +158,14 @@ if shared.useVeryEasyProofOfWorkForTesting:
     shared.networkDefaultPayloadLengthExtraBytes = int(
         shared.networkDefaultPayloadLengthExtraBytes / 100)
 
+
+
 class Main:
-    def start(self, daemon=False):
+    tx_amount=0
+    tx_id=0
+    tx_desc="Hello World"    
+   
+    def start(self, daemon=False):       
         _fixWinsock()
 
         shared.daemon = daemon
@@ -170,7 +176,7 @@ class Main:
         curses = False
         if '-c' in sys.argv:
             curses = True
-
+        
         signal.signal(signal.SIGINT, helper_generic.signal_handler)
         # signal.signal(signal.SIGINT, signal.SIG_DFL)
 
@@ -267,6 +273,21 @@ class Main:
         port = shared.config.getint('bitmessagesettings', 'apiport')
         return {'address':address,'port':port}
 
+
+def getTxDesc():
+    Main.tx_desc="Hello Feathercoin"
+    
+    for i,eachArg in enumerate(sys.argv):
+    	if i==1:
+    		Main.tx_amount=eachArg
+    	elif i==2:
+    		Main.tx_id=eachArg
+    	elif i==3:
+    		Main.tx_desc=eachArg
+    		
+    return Main.tx_desc
+    
+            
 if __name__ == "__main__":
     mainprogram = Main()
     mainprogram.start()

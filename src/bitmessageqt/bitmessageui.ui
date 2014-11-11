@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Bitmessage</string>
+   <string>Bitmessage - Feathercoin</string>
   </property>
   <property name="windowIcon">
    <iconset resource="bitmessage_icons.qrc">
