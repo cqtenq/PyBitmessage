@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'about.ui'
 #
-# Created: Sun Nov 09 19:17:52 2014
+# Created: Tue Nov 25 22:09:47 2014
 #      by: PyQt4 UI code generator 4.11.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -73,6 +73,6 @@ class Ui_aboutDialog(object):
         self.labelVersion.setText(_translate("aboutDialog", "version ?", None))
         self.label_2.setText(_translate("aboutDialog", "<html><head/><body><p>Copyright © 2012-2014 Jonathan Warren<br/>Copyright © 2013-2014 The Bitmessage Developers<br/>Copyright ©2014-2015 The Feathercoin Developers</p></body></html>", None))
         self.label_3.setText(_translate("aboutDialog", "<html><head/><body><p>Distributed under the MIT/X11 software license; see <a href=\"http://www.opensource.org/licenses/mit-license.php\"><span style=\" text-decoration: underline; color:#0000ff;\">http://www.opensource.org/licenses/mit-license.php</span></a></p></body></html>", None))
-        self.label_5.setText(_translate("aboutDialog", "This is Beta software.", None))
+        self.label_5.setText(_translate("aboutDialog", "This is share software for Feathercoin.", None))
 
 import bitmessage_icons_rc

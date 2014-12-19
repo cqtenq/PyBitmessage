@@ -109,7 +109,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>This is Beta software.</string>
+    <string>This is share software for Feathercoin.</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
