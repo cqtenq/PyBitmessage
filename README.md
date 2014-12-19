@@ -1,4 +1,4 @@
-PyBitmessage
+PyBitmessage for Feathercoin
 ============
 
 Bitmessage is a P2P communications protocol used to send encrypted messages to
